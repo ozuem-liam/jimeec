@@ -13,14 +13,14 @@
         </div>
         <div>
             <ul class="navlist">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
     </div>
-    <section class="home">
+    <section id="home" class="home">
         <img src="./images/logo.jpeg" alt="logo" width="1350" height="600" class="slideshow-img">
         <img src="./images/background image.jpg" alt="line lighting" width="1350" height="600" class="slideshow-img">
         <img src="./images/pic1.jpeg" alt="working" width="1350" height="600" class="slideshow-img">
@@ -28,7 +28,7 @@
         <img src="./images/pic8.jpeg" alt="bulb" width="1350" height="600" class="slideshow-img">
     </section>
 
-    <section class="aboutus">
+    <section id="about" class="aboutus">
         <div>
             <img src="./images/img1.jpeg" alt="card" style="width: 700px; height: 500px; margin: 10px; border: 1px solid navy;">
         </div>
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <h2>Our Services</h2>
         <ul class="servicelist">
             <li>Standard house wiring (Conduit and Surface)</li>
@@ -59,13 +59,12 @@
         </ul>
     </section>
 
-    <section class="contactus">
+    <section id="contact" class="contactus">
         <div class="logo">
             <img src="./images/img2.jpeg" alt="JIMEEC">
         </div>
         <div>
             <ul class="address">
-                <h3>Contact Us</h3>
                 <ul>
                     <h4>Address:</h4>
                     <li>Aba Umuahia, Head Office Branc</li>
@@ -80,19 +79,15 @@
                 </ul>
             </ul>
         </div>
-        <form class="signup">
+        <div class="signup">
             <h3>Stay in touch</h3>
             <p>
                 Sign up now and get updates
                 <br>
-                on our latest activities.
+                on our latest activities by clicking subscribe.
             </p>
-            <label for="text"><input type="text" placeholder="Name"></label>
-            <br>
-            <label for="email"><input type="email" placeholder="Email"></label>
-            <br>
-            <button>Subscribe</button>
-        </form>
+            <a class="subcribe" href="">Subscribe</a>
+        </div>
     </section>
 
     <footer>
