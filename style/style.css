@@ -1,0 +1,212 @@
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  font-family: sans-serif;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+/* First Div */
+.navbar {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.navbar div {
+  justify-content: center;
+  align-items: center;
+}
+.navbar div h1 {
+  padding: 10px;
+  margin: 0;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+}
+.navlist li {
+  display: flex;
+  text-decoration: none;
+}
+.navlist li a {
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  padding-left: 20px;
+}
+.navlist li a:hover {
+  color: navy;
+}
+
+/* Second Div */
+section {
+  position: sticky;
+}
+.home {
+  position: relative;
+}
+.slideshow-img {
+  position: absolute;
+  object-fit: cover;
+  border: 2px solid navy;
+  /* z-index: -1; */
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+/* .slideshow-img:first-child {
+  display: block;
+} */
+/* Third Div */
+
+.aboutus {
+  display: grid;
+  position: relative;
+  top: 600px;
+  grid-template-columns: 1fr 1fr;
+}
+
+blockquote {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+/* Fourth Div */
+
+.services {
+  font-family: sans-serif;
+  width: 100%;
+  position: relative;
+  top: 600px;
+  height: 300px;
+  padding-top: 20px;
+  background-color: navy;
+  color: white;
+}
+
+.services h2 {
+  padding-left: 20px;
+}
+
+.servicelist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.servicelist li {
+  display: flex;
+  font-family: sans-serif;
+  position: relative;
+  text-decoration: none;
+  padding: 20px;
+  justify-content: center;
+  margin: 10px;
+  width: 80%;
+  background-color: yellowgreen;
+}
+
+/* fifth Div */
+
+.contactus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #000000;
+  position: relative;
+  top: 600px;
+  color: white;
+  width: 100%;
+}
+
+.logo img {
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid navy;
+  border-radius: 2em;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address h3 {
+  font-family: sans-serif;
+}
+.address ul {
+  padding: 0;
+}
+.address ul h4 {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  left: 0;
+}
+.address ul li {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+}
+.signup {
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+input {
+  border: 1px solid navy;
+  height: 30px;
+  width: 300px;
+  border-radius: 0.5em;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.signup input {
+  margin: 10px;
+  padding: 10px;
+}
+button {
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: none;
+  color: green;
+  border: 2px solid green;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+/* Sixth Div */
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 600px;
+  align-items: center;
+  background-color: gray;
+  color: black;
+  height: 30px;
+}
+footer p {
+  margin: 0;
+}
