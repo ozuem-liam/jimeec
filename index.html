@@ -3,10 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JIMEEC</title>
+
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/935c6e3df3.js" crossorigin="anonymous"></script>
     <script src="./script/main.js" defer></script>
 </head>
 <body>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>JIMEEC</header>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
     <div class="navbar">
         <div>
             <h1>JIMEEC</h1>
@@ -29,7 +46,7 @@
     </section>
 
     <section id="about" class="aboutus">
-        <div>
+        <div class="aboutimg">
             <img src="./images/img1.jpeg" alt="card" style="width: 700px; height: 500px; margin: 10px; border: 1px solid navy;">
         </div>
         <div>

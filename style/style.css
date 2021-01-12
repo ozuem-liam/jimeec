@@ -7,6 +7,18 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* side bar hidden */
+.sidebar {
+  display: none;
+}
+input {
+  display: none;
+}
+label {
+  display: none;
+}
+
 /* First Div */
 .navbar {
   height: 50px;
@@ -75,6 +87,7 @@ section {
   display: grid;
   position: relative;
   top: 600px;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -190,6 +203,7 @@ footer {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 100%;
   top: 600px;
   align-items: center;
   background-color: gray;
@@ -198,4 +212,279 @@ footer {
 }
 footer p {
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* side bar hidden */
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    left: -100px;
+    width: 100px;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .sidebar header {
+    display: block;
+    font-size: 11px;
+    color: #00ff43;
+    text-align: center;
+    line-height: 35px;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    user-select: none;
+  }
+  .sidebar .navlist {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar .navlist a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    line-height: 30px;
+    font-size: 10px;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #00ff43;
+    border-bottom: 1px solid #00ff43;
+    transition: 0.4s;
+  }
+  .navlist li:hover a {
+    padding-left: 25px;
+  }
+
+  #check {
+    display: none;
+  }
+
+  label #btn,
+  label #cancel {
+    position: fixed;
+    cursor: pointer;
+    background: black;
+    border-radius: 1px;
+    z-index: 1000;
+  }
+  label #btn {
+    left: 20px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+  }
+  label #cancel {
+    z-index: 1111;
+    left: -100px;
+    top: 10px;
+    font-size: 15px;
+    color: #0a5275;
+    padding: 2px 4px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    left: 100px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    left: 100px;
+  }
+  #check:checked ~ .home {
+    margin-left: 100px;
+  }
+  #check:checked ~ .aboutus {
+    margin-left: 100px;
+  }
+  #check:checked ~ .services {
+    margin-left: 100px;
+  }
+  #check:checked ~ .contactus {
+    margin-left: 100px;
+  }
+
+  /* First Div */
+
+  /* Second Div */
+
+  .home {
+    position: relative;
+  }
+  .slideshow-img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid navy;
+    /* z-index: -1; */
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+
+  /* .slideshow-img:first-child {
+    display: block;
+  } */
+  /* Third Div */
+
+  .aboutus {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+  }
+
+  .aboutimg {
+    display: none;
+  }
+
+  blockquote {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -300px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Fourth Div */
+
+  .services {
+    font-family: sans-serif;
+    top: 300px;
+    width: 100%;
+    height: 300px;
+    background-color: navy;
+    color: white;
+  }
+
+  .services h2 {
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .servicelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .servicelist li {
+    display: flex;
+    font-family: sans-serif;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    background-color: yellowgreen;
+  }
+
+  /* fifth Div */
+
+  .contactus {
+    display: block;
+    position: relative;
+    flex-direction: row;
+    background-color: #000000;
+    height: 400px;
+    font-family: sans-serif;
+    top: 300px;
+    width: 100%;
+    color: white;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .address {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .address h3 {
+    font-family: sans-serif;
+  }
+  .address ul {
+    padding: 0;
+  }
+  .address ul h4 {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    left: 0;
+  }
+  .address ul li {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .signup {
+    font-family: sans-serif;
+    padding-top: 20px;
+  }
+
+  .subcribe {
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: none;
+    color: green;
+    border: 2px solid green;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+
+  /* Sixth Div */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 300;
+    align-items: center;
+    background-color: gray;
+    color: black;
+    height: 30px;
+  }
+  footer p {
+    margin: 0;
+  }
 }
