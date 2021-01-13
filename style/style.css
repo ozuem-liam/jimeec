@@ -55,10 +55,9 @@ label {
   font-family: sans-serif;
   font-weight: 700;
   font-size: larger;
-  padding-left: 20px;
 }
 .navlist li a:hover {
-  color: navy;
+  border-bottom: 2px solid navy;
 }
 
 /* Second Div */
@@ -89,6 +88,8 @@ section {
   top: 600px;
   width: 100%;
   grid-template-columns: 1fr 1fr;
+  background: rgb(50, 50, 68);
+  color: white;
 }
 
 blockquote {
@@ -107,7 +108,7 @@ blockquote {
   top: 600px;
   height: 300px;
   padding-top: 20px;
-  background-color: navy;
+  background-color: rgb(31, 31, 167);
   color: white;
 }
 
@@ -132,7 +133,8 @@ blockquote {
   justify-content: center;
   margin: 10px;
   width: 80%;
-  background-color: yellowgreen;
+  background-color: rgb(50, 50, 68);
+  border-radius: 2px;
 }
 
 /* fifth Div */
@@ -140,7 +142,7 @@ blockquote {
 .contactus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #000000;
+  background-color: rgb(50, 50, 68);
   position: relative;
   top: 600px;
   color: white;
@@ -151,13 +153,14 @@ blockquote {
   width: 250px;
   height: 200px;
   margin: 20px;
-  border: 1px solid navy;
+  border: 1px solid rgb(31, 31, 167);
   border-radius: 2em;
 }
 
 .address {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .address h3 {
@@ -188,13 +191,15 @@ blockquote {
 }
 
 .subcribe {
-  margin-left: 10px;
+  margin-left: 0;
   padding-left: 10px;
+  padding-right: 10px;
   background-color: none;
-  color: green;
-  border: 2px solid green;
+  color: white;
+  border: 2px solid rgb(13, 94, 24);
   border-radius: 1em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Sixth Div */
@@ -206,8 +211,8 @@ footer {
   width: 100%;
   top: 600px;
   align-items: center;
-  background-color: gray;
-  color: black;
+  background-color: black;
+  color: rgb(163, 162, 162);
   height: 30px;
 }
 footer p {
@@ -217,6 +222,7 @@ footer p {
 @media only screen and (max-width: 768px) {
   body {
     font-family: sans-serif;
+    background: rgb(50, 50, 68);
     padding: 0;
     margin: 0;
   }
@@ -238,7 +244,7 @@ footer p {
     left: -100px;
     width: 100px;
     margin: 0;
-    height: 100%;
+    height: 50%;
     background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
     transition: all 0.5s ease;
     z-index: 1000;
@@ -247,7 +253,7 @@ footer p {
   .sidebar header {
     display: block;
     font-size: 11px;
-    color: #00ff43;
+    color: rgb(31, 31, 167);
     text-align: center;
     line-height: 35px;
     background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
@@ -268,8 +274,8 @@ footer p {
     color: white;
     padding-left: 20px;
     box-sizing: border-box;
-    border-top: 1px solid #00ff43;
-    border-bottom: 1px solid #00ff43;
+    border-top: 1px solid navy;
+    border-bottom: 1px solid navy;
     transition: 0.4s;
   }
   .navlist li:hover a {
@@ -358,6 +364,8 @@ footer p {
     width: 100%;
     height: 300px;
     flex-direction: row;
+    background: rgb(50, 50, 68);
+    color: white;
   }
 
   .aboutimg {
@@ -382,7 +390,7 @@ footer p {
     top: 300px;
     width: 100%;
     height: 300px;
-    background-color: navy;
+    background-color: rgb(31, 31, 167);
     color: white;
   }
 
@@ -407,7 +415,7 @@ footer p {
     justify-content: center;
     margin: 10px;
     width: 80%;
-    background-color: yellowgreen;
+    background-color: rgb(50, 50, 68);
   }
 
   /* fifth Div */
@@ -416,7 +424,7 @@ footer p {
     display: block;
     position: relative;
     flex-direction: row;
-    background-color: #000000;
+    background-color: rgb(50, 50, 68);
     height: 400px;
     font-family: sans-serif;
     top: 300px;
@@ -430,8 +438,11 @@ footer p {
 
   .address {
     display: grid;
+    padding-left: 0;
+    margin-left: 20px;
+    padding-top: 20px;
     grid-template-columns: 1fr;
-    background: #000000;
+    background: rgb(50, 50, 68);
     color: #ffffff;
   }
 
@@ -460,14 +471,15 @@ footer p {
   .signup {
     font-family: sans-serif;
     padding-top: 20px;
+    margin-left: 20px;
   }
 
   .subcribe {
-    margin-left: 10px;
+    margin-left: 0;
     padding-left: 10px;
     background-color: none;
-    color: green;
-    border: 2px solid green;
+    color: white;
+    border: 2px solid rgb(13, 94, 24);
     border-radius: 1em;
     cursor: pointer;
   }
@@ -480,8 +492,8 @@ footer p {
     width: 100%;
     top: 300;
     align-items: center;
-    background-color: gray;
-    color: black;
+    background-color: black;
+    color: rgb(163, 162, 162);
     height: 30px;
   }
   footer p {
