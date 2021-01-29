@@ -321,8 +321,6 @@ footer p {
     margin-top: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border-top: 1px solid navy;
-    border-bottom: 1px solid navy;
     transition: 0.4s;
   }
   .navlist li:hover a {
@@ -351,7 +349,7 @@ footer p {
   }
   label #cancel {
     z-index: 1111;
-    left: -100px;
+    left: -200px;
     top: 10px;
     font-size: 15px;
     color: #0a5275;
@@ -367,7 +365,7 @@ footer p {
     pointer-events: none;
   }
   #check:checked ~ label #cancel {
-    left: 100px;
+    left: 170px;
   }
   /* #check:checked ~ .home {
     margin-left: 100px;
